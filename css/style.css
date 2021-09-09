@@ -27,6 +27,10 @@ body{
     font-size: 26px;
     font-weight: 700;
 }
+.navbar-light .navbar-toggler-icon {
+   
+    filter: invert(1);
+}
 .navbar-brand img{
     width: 50px;
     align-items: center;
@@ -71,7 +75,6 @@ header {
 .header-text h1 span{
     color: #1eff62;
 }
-
 .header-text p{
     font-size: 17px;
     letter-spacing: 1.5px;
@@ -83,7 +86,6 @@ header {
     padding: 10px;
     filter: hue-rotate(45deg);
 }
-
 /*==========header and nav section=======*/
 
 /*==========about section==========*/
@@ -94,13 +96,17 @@ header {
 .about-me{
     padding: 80px 31px 0;
 }
-
 .about-me h3{
     color: white;
     font-size: 28px;
     font-weight: 600;
 }
-.about-me p{font-size: 17px;letter-spacing: 1.5px;line-height: 22px;color: #ffffff9e;}
+.about-me p{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+    color: #ffffff9e;
+    }
 .about-me span {
 }
 .about-img{}
@@ -115,12 +121,7 @@ header {
     font-size: 20px;
     font-weight: 400;
 }
-
-
 /*==========about section==========*/
-
-
-
 /*============service section========*/
 .card-section{
     background: black;
@@ -133,33 +134,28 @@ header {
     margin: 40px 0;
 }
 .card-section .card-containt:hover{
- 
-transition-duration: 0.3s;
- 
-border-radius: 15px;
- 
-box-shadow: inset 9px 9px 15px #1eff6261, inset -9px -9px 15px #1eff6261;
+    transition-duration: 0.3s;
+    border-radius: 15px;
+    box-shadow: inset 9px 9px 15px #1eff6261, 
+    inset -9px -9px 15px #1eff6261;
 }
 
-.card-section .col-4 img{
+.card-section .col-lg-4 img{
     filter: invert(1);
 }
-.card-section .col-4 h3{
+.card-section .col-lg-4 h3{
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 11px 0 7px;
     color: white;
 }
-.card-section .col-4 h3:hover{
-
-letter-spacing: 2.7px;
-
-transition-duration: 0.3s;
-
-color: #1eff62;
+.card-section .col-lg-4 h3:hover{
+    letter-spacing: 2.7px;
+    transition-duration: 0.3s;
+    color: #1eff62;
 }
-.card-section .col-4 p{
+.card-section .col-lg-4 p{
     margin-bottom: 0 !important;
     font-size: 15px;
     letter-spacing: 1px;
@@ -173,11 +169,6 @@ color: #1eff62;
     color: white;
 }
 /*============service section========*/
-
-
-
-
-
 
 /*============work section========*/
 .work-section{
@@ -204,12 +195,7 @@ color: #1eff62;
     /* border-radius: 28px; */
     margin: 10px;
 }
-
-
 /*============work section========*/
-
-
-
 
 .contact-section{
     padding: 100px 0 50px;
@@ -229,7 +215,6 @@ color: #1eff62;
     color: #ffffff9e;
     margin-left: 18px;
 }
-
 .contact h3{
    color: white;
    font-size: 28px;
@@ -238,7 +223,6 @@ color: #1eff62;
 .contact h3 span{
     /* color: #1eff62; */
 }
-
 .contact h2{
     text-align: center;
     padding-bottom: 43px;
@@ -248,25 +232,19 @@ color: #1eff62;
 .contact h2 span{
     color: #1eff62;
 }
-
-
 .contact-info{
     padding: 20px 0;
 }
-
 label {
     font-size: 16px;
     letter-spacing: 1px;
     color: #ffffff9e;
 }
-
 .form-control {
     color: #ffffff;
     background-color: #fff0;
     border: 1px solid #1eff62;
 }
-
-
 .form-control:focus {
     color: #ffffff;
     background-color: #fff0;
@@ -274,12 +252,9 @@ label {
     box-shadow: none;
     border: 2px solid #1eff62;
 }
-
 form .btn{
    margin: 10px 0; 
 }
-
-
 
 /*footer section*/
 footer{
@@ -310,3 +285,150 @@ footer{
     font-size: 20px;
 }
 
+
+
+/*=================meadia start=================*/
+@media(max-width:1199px){
+    .header-img img {
+    max-width: 26rem;
+    }
+
+}
+@media(max-width:992px){
+.header-text h1 {
+    font-size: 2rem;
+}
+
+    .header-img img {
+    max-width: 23rem;
+}
+
+.about-img img {
+    max-width: 15rem;
+}
+.about-me h4 {
+    font-size: 18px;
+}
+.about-me h3 {
+    font-size: 27px;
+}
+.about-me p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.about-me {
+    padding: 20px 0;
+}
+
+/*header */
+.fe-section {
+    padding: 48px 0;
+}
+
+}
+
+@media(max-width:768px){
+.header-img img {
+    max-width: 16rem;
+}
+.header-text h3 {
+    font-size: 18px;
+}
+.header-text h1 {
+    font-size: 1.7rem;
+}
+.header-text {
+    padding: 100px 15px;
+}
+header {
+    height: 26rem;
+}
+.about-me p {
+    font-size: 14px;
+    }
+.btn {
+    border: 1.7px solid #1eff62;
+    padding: 9px 18px;
+    font-size: 12px;
+}
+.about-img img {
+    max-width: 15rem;
+    margin-left: 0 !important;
+}
+.card-section .card-containt {
+    padding: 30px;
+    margin: 40px 35px;
+}
+}
+
+@media(max-width:576px){
+    .container{
+        max-width: 100%;
+    }
+    .header-text {
+    padding: 28px 3px;
+}
+.fe-section {
+    text-align: center;
+}
+.header-img img {
+    max-width: 14rem;
+    padding: 0 !important;
+}
+.header-text h3 {
+    font-size: 15px;
+}
+.header-text h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+.header-text p {
+    font-size: 15px;
+    color: #ffffff9e;
+    margin-bottom: 2px !important;
+}
+.btn {
+    border: 1px solid #1eff62;
+    padding: 5px 10px;
+    font-size: 7px;
+}
+.about-section {
+    padding: 45px 0;
+    text-align: center;
+}
+.about-me p {
+    font-size: 14px;
+    padding: 14px;
+    margin: 0;
+}
+.about-me h3 {
+    margin: 0;
+}
+.work-img img {
+    max-width: 20rem;
+    margin: 10px;
+}
+.work-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+.contact h2 {
+    text-align: center;
+    padding-bottom: 12px;
+}
+.contact-info {
+    padding: 12px 0;
+}
+.contact i {
+     padding: 0 !important; 
+}
+footer {
+    padding: 12px 0;
+}
+}
